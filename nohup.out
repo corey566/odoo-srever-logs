@@ -1,0 +1,2 @@
+tail: '/var/log/auth.log' has become inaccessible: No such file or directory
+tail: '/var/log/auth.log' has appeared;  following new file
