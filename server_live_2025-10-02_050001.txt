@@ -1,0 +1,44 @@
+===== Active SSH Sessions =====
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                              
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=551,fd=16))                                                                                           
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=551,fd=14))                                                                                           
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=8766,fd=7))                                                                                                  
+tcp   LISTEN 0      4096       127.0.0.1:37127      0.0.0.0:*    users:(("containerd",pid=33638,fd=10))                                                                                              
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=551,fd=17))                                                                                           
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=551,fd=15))                                                                                           
+tcp   LISTEN 0      128          0.0.0.0:8069       0.0.0.0:*    users:(("python3",pid=36181,fd=4))                                                                                                  
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=894,fd=3),("systemd",pid=1,fd=111))                                                                              
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=10089,fd=7),("nginx",pid=10088,fd=7),("nginx",pid=10087,fd=7),("nginx",pid=10086,fd=7),("nginx",pid=10085,fd=7))
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=10089,fd=9),("nginx",pid=10088,fd=9),("nginx",pid=10087,fd=9),("nginx",pid=10086,fd=9),("nginx",pid=10085,fd=9))
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=894,fd=4),("systemd",pid=1,fd=114))                                                                              
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=10089,fd=8),("nginx",pid=10088,fd=8),("nginx",pid=10087,fd=8),("nginx",pid=10086,fd=8),("nginx",pid=10085,fd=8))
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=8766,fd=6))                                                                                                  
+
+===== Docker Containers =====
+NAMES     STATUS    PORTS
+
+===== Postgres Databases =====
+                                                   List of databases
+   Name    |  Owner   | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |   Access privileges   
+-----------+----------+----------+-----------------+---------+---------+------------+-----------+-----------------------
+ postgres  | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ seaport   | odoo17   | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1  | odoo17   | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ template0 | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres          +
+           |          |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1 | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres          +
+           |          |          |                 |         |         |            |           | postgres=CTc/postgres
+(5 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:60020         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46834         127.0.0.1:8069          TIME_WAIT   -                   
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
