@@ -44,3 +44,4 @@ Can't send mail: sendmail process failed with error code 75
 sendmail: fatal: open /etc/postfix/main.cf: No such file or directory
 Can't send mail: sendmail process failed with error code 75
 tail: '/var/log/auth.log' has been replaced;  following new file
+tail: '/var/log/auth.log' has been replaced;  following new file
