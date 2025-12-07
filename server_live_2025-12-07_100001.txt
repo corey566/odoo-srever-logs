@@ -1,0 +1,121 @@
+===== Active SSH Sessions =====
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                     
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=16))                                                                                                  
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=14))                                                                                                  
+udp   UNCONN 0      0          127.0.0.1:1721       0.0.0.0:*    users:(("monarx-agent",pid=766,fd=9))                                                                                                      
+tcp   LISTEN 0      4096         0.0.0.0:8074       0.0.0.0:*    users:(("docker-proxy",pid=15983,fd=7))                                                                                                    
+tcp   LISTEN 0      4096         0.0.0.0:8073       0.0.0.0:*    users:(("docker-proxy",pid=21057,fd=7))                                                                                                    
+tcp   LISTEN 0      4096         0.0.0.0:8070       0.0.0.0:*    users:(("docker-proxy",pid=16087,fd=7))                                                                                                    
+tcp   LISTEN 0      128          0.0.0.0:8069       0.0.0.0:*    users:(("python3",pid=686444,fd=4))                                                                                                        
+tcp   LISTEN 0      4096         0.0.0.0:8080       0.0.0.0:*    users:(("docker-proxy",pid=17241,fd=7))                                                                                                    
+tcp   LISTEN 0      4096       127.0.0.1:38771      0.0.0.0:*    users:(("containerd",pid=785,fd=9))                                                                                                        
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=686352,fd=7))                                                                                                       
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=15))                                                                                                  
+tcp   LISTEN 0      4096         0.0.0.0:5433       0.0.0.0:*    users:(("docker-proxy",pid=16208,fd=7))                                                                                                    
+tcp   LISTEN 0      4096       127.0.0.1:65529      0.0.0.0:*    users:(("monarx-agent",pid=766,fd=8))                                                                                                      
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=746215,fd=9),("nginx",pid=746214,fd=9),("nginx",pid=746213,fd=9),("nginx",pid=746212,fd=9),("nginx",pid=810,fd=9))     
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=17))                                                                                                  
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1595,fd=3),("systemd",pid=1,fd=180))                                                                                    
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=746215,fd=10),("nginx",pid=746214,fd=10),("nginx",pid=746213,fd=10),("nginx",pid=746212,fd=10),("nginx",pid=810,fd=10))
+tcp   LISTEN 0      4096            [::]:8074          [::]:*    users:(("docker-proxy",pid=15989,fd=7))                                                                                                    
+tcp   LISTEN 0      4096            [::]:8073          [::]:*    users:(("docker-proxy",pid=21064,fd=7))                                                                                                    
+tcp   LISTEN 0      4096            [::]:8070          [::]:*    users:(("docker-proxy",pid=16094,fd=7))                                                                                                    
+tcp   LISTEN 0      4096            [::]:8080          [::]:*    users:(("docker-proxy",pid=17247,fd=7))                                                                                                    
+tcp   LISTEN 0      4096            [::]:5433          [::]:*    users:(("docker-proxy",pid=16214,fd=7))                                                                                                    
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=686352,fd=6))                                                                                                       
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=1595,fd=4),("systemd",pid=1,fd=182))                                                                                    
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=746215,fd=11),("nginx",pid=746214,fd=11),("nginx",pid=746213,fd=11),("nginx",pid=746212,fd=11),("nginx",pid=810,fd=11))
+
+===== Docker Containers =====
+NAMES                            STATUS       PORTS
+csg_odoo_csg_1                   Up 3 weeks   8071-8072/tcp, 0.0.0.0:8073->8069/tcp, [::]:8073->8069/tcp
+csg_db_csg_1                     Up 3 weeks   5432/tcp
+pgadmin                          Up 3 weeks   443/tcp, 0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+training_odoo                    Up 3 weeks   8071-8072/tcp, 0.0.0.0:8074->8069/tcp, [::]:8074->8069/tcp
+0e84dd66dc32_training_db         Up 3 weeks   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+yallahabibi_odoo_yallahabibi_1   Up 3 weeks   8071-8072/tcp, 0.0.0.0:8070->8069/tcp, [::]:8070->8069/tcp
+yallahabibi_db_yallahabibi_1     Up 3 weeks   5432/tcp
+
+===== Postgres Databases =====
+                                                   List of databases
+   Name    |  Owner   | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |   Access privileges   
+-----------+----------+----------+-----------------+---------+---------+------------+-----------+-----------------------
+ postgres  | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ seaport   | odoo17   | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1  | odoo17   | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ template0 | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres          +
+           |          |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1 | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres          +
+           |          |          |                 |         |         |            |           | postgres=CTc/postgres
+(5 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:54682         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36526         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40436         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54684         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54632         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:41526      34.76.202.178:443       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36578         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40402         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36546         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45582         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:46936      52.26.2.204:443         ESTABLISHED 766/monarx-agent    
+tcp        0      0 127.0.0.1:36568         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.168.72:13348     ESTABLISHED 746213/nginx: worke 
+tcp        0      0 72.60.198.47:443        162.158.108.77:11445    ESTABLISHED 746215/nginx: worke 
+tcp        0      0 127.0.0.1:40398         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45554         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36554         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:41510      34.76.202.178:443       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54644         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:50970         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:41540      34.76.202.178:443       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45596         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.168.82:9403      ESTABLISHED 746213/nginx: worke 
+tcp        0      0 127.0.0.1:45624         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45550         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54664         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        162.159.113.69:12976    TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        162.158.108.77:9838     TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:50964         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:41536      34.76.202.178:443       TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.168.73:13098     ESTABLISHED 746213/nginx: worke 
+tcp        0      0 127.0.0.1:50960         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45566         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54670         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54642         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:50978         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36548         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36522         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:41504      34.76.202.178:443       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45626         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.168.73:14016     ESTABLISHED 746213/nginx: worke 
+tcp        0      0 127.0.0.1:45610         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.166.172:9429     ESTABLISHED 746213/nginx: worke 
+tcp        0      0 127.0.0.1:40444         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36608         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.168.83:9501      ESTABLISHED 746213/nginx: worke 
+tcp        0      0 127.0.0.1:36572         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54690         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36602         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40420         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36536         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40404         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40428         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:50944         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36594         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:36544         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40442         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.168.73:12877     ESTABLISHED 746213/nginx: worke 
+tcp        0      0 72.60.198.47:41552      34.76.202.178:443       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:54650         127.0.0.1:8069          TIME_WAIT   -                   
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
