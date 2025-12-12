@@ -1,0 +1,111 @@
+===== Active SSH Sessions =====
+root     pts/0        2025-12-12 06:52 (112.134.215.26)
+root     pts/1        2025-12-12 08:30 (112.134.215.26)
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                   
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=16))                                                                                                
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=14))                                                                                                
+udp   UNCONN 0      0          127.0.0.1:1721       0.0.0.0:*    users:(("monarx-agent",pid=766,fd=9))                                                                                                    
+udp   UNCONN 0      0            0.0.0.0:35575      0.0.0.0:*    users:(("avahi-daemon",pid=837169,fd=14))                                                                                                
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=837169,fd=12))                                                                                                
+udp   UNCONN 0      0               [::]:43628         [::]:*    users:(("avahi-daemon",pid=837169,fd=15))                                                                                                
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=837169,fd=13))                                                                                                
+tcp   LISTEN 0      128          0.0.0.0:8076       0.0.0.0:*    users:(("python3",pid=909033,fd=3))                                                                                                      
+tcp   LISTEN 0      128          0.0.0.0:8075       0.0.0.0:*    users:(("python3",pid=840811,fd=4))                                                                                                      
+tcp   LISTEN 0      4096         0.0.0.0:8074       0.0.0.0:*    users:(("docker-proxy",pid=15983,fd=7))                                                                                                  
+tcp   LISTEN 0      4096         0.0.0.0:8070       0.0.0.0:*    users:(("docker-proxy",pid=16087,fd=7))                                                                                                  
+tcp   LISTEN 0      4096         0.0.0.0:8080       0.0.0.0:*    users:(("docker-proxy",pid=17241,fd=7))                                                                                                  
+tcp   LISTEN 0      4096       127.0.0.1:38771      0.0.0.0:*    users:(("containerd",pid=785,fd=9))                                                                                                      
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=686352,fd=7))                                                                                                     
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=15))                                                                                                
+tcp   LISTEN 0      4096         0.0.0.0:5433       0.0.0.0:*    users:(("docker-proxy",pid=16208,fd=7))                                                                                                  
+tcp   LISTEN 0      4096       127.0.0.1:65529      0.0.0.0:*    users:(("monarx-agent",pid=766,fd=8))                                                                                                    
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=910002,fd=9),("nginx",pid=910000,fd=9),("nginx",pid=909999,fd=9),("nginx",pid=909998,fd=9),("nginx",pid=909997,fd=9))
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=17))                                                                                                
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1595,fd=3),("systemd",pid=1,fd=179))                                                                                  
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=910002,fd=7),("nginx",pid=910000,fd=7),("nginx",pid=909999,fd=7),("nginx",pid=909998,fd=7),("nginx",pid=909997,fd=7))
+tcp   LISTEN 0      4096            [::]:8074          [::]:*    users:(("docker-proxy",pid=15989,fd=7))                                                                                                  
+tcp   LISTEN 0      4096            [::]:8070          [::]:*    users:(("docker-proxy",pid=16094,fd=7))                                                                                                  
+tcp   LISTEN 0      4096            [::]:8080          [::]:*    users:(("docker-proxy",pid=17247,fd=7))                                                                                                  
+tcp   LISTEN 0      4096            [::]:5433          [::]:*    users:(("docker-proxy",pid=16214,fd=7))                                                                                                  
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=686352,fd=6))                                                                                                     
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=1595,fd=4),("systemd",pid=1,fd=182))                                                                                  
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=910002,fd=8),("nginx",pid=910000,fd=8),("nginx",pid=909999,fd=8),("nginx",pid=909998,fd=8),("nginx",pid=909997,fd=8))
+
+===== Docker Containers =====
+NAMES                            STATUS       PORTS
+pgadmin                          Up 4 weeks   443/tcp, 0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+training_odoo                    Up 4 weeks   8071-8072/tcp, 0.0.0.0:8074->8069/tcp, [::]:8074->8069/tcp
+0e84dd66dc32_training_db         Up 4 weeks   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+yallahabibi_odoo_yallahabibi_1   Up 4 weeks   8071-8072/tcp, 0.0.0.0:8070->8069/tcp, [::]:8070->8069/tcp
+
+===== Postgres Databases =====
+                                                              List of databases
+    Name    |      Owner      | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |          Access privileges          
+------------+-----------------+----------+-----------------+---------+---------+------------+-----------+-------------------------------------
+ codestudio | codestudio_user | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/codestudio_user                +
+            |                 |          |                 |         |         |            |           | codestudio_user=CTc/codestudio_user
+ csg        | odoo            | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ postgres   | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ seaport    | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1   | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ template0  | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+            |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1  | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+            |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+(7 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 72.60.198.47:443        45.5.37.241:33097       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.241:30519       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.115:54672       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.36.89:37165        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.39.141:3083        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.36.188:57593       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.58:46002        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.100:30419       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.193:19833       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.36.174:6842        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.66:2388         SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.155:47767       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.36.151:43633       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.36.201:21363       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.252:30035       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.75:7363         SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.235:44810       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.39.201:14208       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.133:14344       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:22         112.134.215.26:43279    ESTABLISHED 909833/sshd: root@p 
+tcp        0      0 72.60.198.47:443        45.5.36.81:20149        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.210:32970       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:36154      100.22.248.229:443      ESTABLISHED 766/monarx-agent    
+tcp        0      0 72.60.198.47:443        45.5.39.60:23343        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.39.111:61050       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.206:35483       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.170:9270        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.76:59284        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.36.103:32084       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.91:47457        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.37.192:42988       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.11:28641        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.39.4:28006         SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.39.93:59854        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.120:20323       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.39.23:36536        SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.109:38300       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        45.5.38.181:21915       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:22         112.134.215.26:41745    ESTABLISHED 907617/sshd: root@p 
+tcp6       0      0 ::1:5432                ::1:51554               ESTABLISHED 840823/postgres: 16 
+tcp6       0      0 ::1:51534               ::1:5432                ESTABLISHED 840811/python3      
+tcp6       0      0 ::1:51554               ::1:5432                ESTABLISHED 840811/python3      
+tcp6       0      0 ::1:5432                ::1:51548               ESTABLISHED 840822/postgres: 16 
+tcp6       0      0 ::1:5432                ::1:51534               ESTABLISHED 840819/postgres: 16 
+tcp6       0      0 ::1:51548               ::1:5432                ESTABLISHED 840811/python3      
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
