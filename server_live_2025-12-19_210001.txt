@@ -1,0 +1,82 @@
+===== Active SSH Sessions =====
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                        
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=16))                                                                                                     
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=14))                                                                                                     
+udp   UNCONN 0      0          127.0.0.1:1721       0.0.0.0:*    users:(("monarx-agent",pid=766,fd=9))                                                                                                         
+udp   UNCONN 0      0            0.0.0.0:35575      0.0.0.0:*    users:(("avahi-daemon",pid=837169,fd=14))                                                                                                     
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=837169,fd=12))                                                                                                     
+udp   UNCONN 0      0               [::]:43628         [::]:*    users:(("avahi-daemon",pid=837169,fd=15))                                                                                                     
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=837169,fd=13))                                                                                                     
+tcp   LISTEN 0      128          0.0.0.0:8075       0.0.0.0:*    users:(("python3",pid=1071596,fd=4))                                                                                                          
+tcp   LISTEN 0      4096         0.0.0.0:8074       0.0.0.0:*    users:(("docker-proxy",pid=15983,fd=7))                                                                                                       
+tcp   LISTEN 0      4096         0.0.0.0:8070       0.0.0.0:*    users:(("docker-proxy",pid=1136731,fd=7))                                                                                                     
+tcp   LISTEN 0      128          0.0.0.0:8069       0.0.0.0:*    users:(("python3",pid=1057782,fd=5))                                                                                                          
+tcp   LISTEN 0      4096         0.0.0.0:8080       0.0.0.0:*    users:(("docker-proxy",pid=17241,fd=7))                                                                                                       
+tcp   LISTEN 0      4096       127.0.0.1:38771      0.0.0.0:*    users:(("containerd",pid=785,fd=9))                                                                                                           
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=1032285,fd=7))                                                                                                         
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=15))                                                                                                     
+tcp   LISTEN 0      4096         0.0.0.0:5433       0.0.0.0:*    users:(("docker-proxy",pid=16208,fd=7))                                                                                                       
+tcp   LISTEN 0      511          0.0.0.0:5000       0.0.0.0:*    users:(("node",pid=924622,fd=17))                                                                                                             
+tcp   LISTEN 0      4096       127.0.0.1:65529      0.0.0.0:*    users:(("monarx-agent",pid=766,fd=8))                                                                                                         
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=1025900,fd=9),("nginx",pid=1025898,fd=9),("nginx",pid=1025897,fd=9),("nginx",pid=1025896,fd=9),("nginx",pid=1025895,fd=9))
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=600,fd=17))                                                                                                     
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1595,fd=3),("systemd",pid=1,fd=163))                                                                                       
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=1025900,fd=7),("nginx",pid=1025898,fd=7),("nginx",pid=1025897,fd=7),("nginx",pid=1025896,fd=7),("nginx",pid=1025895,fd=7))
+tcp   LISTEN 0      4096            [::]:8074          [::]:*    users:(("docker-proxy",pid=15989,fd=7))                                                                                                       
+tcp   LISTEN 0      4096            [::]:8070          [::]:*    users:(("docker-proxy",pid=1136739,fd=7))                                                                                                     
+tcp   LISTEN 0      4096            [::]:8080          [::]:*    users:(("docker-proxy",pid=17247,fd=7))                                                                                                       
+tcp   LISTEN 0      4096            [::]:5433          [::]:*    users:(("docker-proxy",pid=16214,fd=7))                                                                                                       
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=1032285,fd=6))                                                                                                         
+tcp   LISTEN 0      4096               *:9090             *:*    users:(("systemd",pid=1,fd=102))                                                                                                              
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=1595,fd=4),("systemd",pid=1,fd=166))                                                                                       
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=1025900,fd=8),("nginx",pid=1025898,fd=8),("nginx",pid=1025897,fd=8),("nginx",pid=1025896,fd=8),("nginx",pid=1025895,fd=8))
+
+===== Docker Containers =====
+NAMES                            STATUS        PORTS
+yallahabibi_odoo_yallahabibi_1   Up 10 hours   8071-8072/tcp, 0.0.0.0:8070->8069/tcp, [::]:8070->8069/tcp
+yallahabibi_db_yallahabibi_1     Up 10 hours   5432/tcp
+pgadmin                          Up 5 weeks    443/tcp, 0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+training_odoo                    Up 5 weeks    8071-8072/tcp, 0.0.0.0:8074->8069/tcp, [::]:8074->8069/tcp
+0e84dd66dc32_training_db         Up 5 weeks    0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+
+===== Postgres Databases =====
+                                                                 List of databases
+      Name       |      Owner      | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |          Access privileges          
+-----------------+-----------------+----------+-----------------+---------+---------+------------+-----------+-------------------------------------
+ codestudio      | codestudio_user | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/codestudio_user                +
+                 |                 |          |                 |         |         |            |           | codestudio_user=CTc/codestudio_user
+ codestudio_user | shahid          | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ csg             | odoo            | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo                           +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo                      +
+                 |                 |          |                 |         |         |            |           | shahid=CTc/odoo
+ postgres        | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ sales_dashboard | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/postgres                       +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres              +
+                 |                 |          |                 |         |         |            |           | dashboard_user=CTc/postgres
+ seaport         | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1        | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo17                         +
+                 |                 |          |                 |         |         |            |           | odoo17=CTc/odoo17                  +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo17
+ template0       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+(9 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 72.60.198.47:40888      35.161.134.156:443      ESTABLISHED 766/monarx-agent    
+tcp6       0      0 ::1:41584               ::1:5432                ESTABLISHED 1071596/python3     
+tcp6       0      0 ::1:5432                ::1:41570               ESTABLISHED 1071600/postgres: 1 
+tcp6       0      0 ::1:41586               ::1:5432                ESTABLISHED 1071596/python3     
+tcp6       0      0 ::1:41570               ::1:5432                ESTABLISHED 1071596/python3     
+tcp6       0      0 ::1:5432                ::1:41586               ESTABLISHED 1071604/postgres: 1 
+tcp6       0      0 ::1:5432                ::1:41584               ESTABLISHED 1071603/postgres: 1 
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
