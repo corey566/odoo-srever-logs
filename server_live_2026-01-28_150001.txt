@@ -1,0 +1,281 @@
+===== Active SSH Sessions =====
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                   
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=301924,fd=12))                                                                                                
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=446574,fd=16))                                                                                             
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=446574,fd=14))                                                                                             
+udp   UNCONN 0      0            0.0.0.0:42173      0.0.0.0:*    users:(("avahi-daemon",pid=301924,fd=14))                                                                                                
+udp   UNCONN 0      0          127.0.0.1:1721       0.0.0.0:*    users:(("monarx-agent",pid=788,fd=8))                                                                                                    
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=301924,fd=13))                                                                                                
+udp   UNCONN 0      0               [::]:52036         [::]:*    users:(("avahi-daemon",pid=301924,fd=15))                                                                                                
+tcp   LISTEN 0      128          0.0.0.0:8075       0.0.0.0:*    users:(("python3",pid=446636,fd=4))                                                                                                      
+tcp   LISTEN 0      128          0.0.0.0:8069       0.0.0.0:*    users:(("python3",pid=446650,fd=5))                                                                                                      
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=446574,fd=17))                                                                                             
+tcp   LISTEN 0      511          0.0.0.0:5000       0.0.0.0:*    users:(("node",pid=2386,fd=17))                                                                                                          
+tcp   LISTEN 0      4096       127.0.0.1:65529      0.0.0.0:*    users:(("monarx-agent",pid=788,fd=9))                                                                                                    
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=446621,fd=7))                                                                                                     
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=446598,fd=7),("nginx",pid=446596,fd=7),("nginx",pid=446595,fd=7),("nginx",pid=446594,fd=7),("nginx",pid=446593,fd=7))
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=446568,fd=3),("systemd",pid=1,fd=109))                                                                                
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=446598,fd=9),("nginx",pid=446596,fd=9),("nginx",pid=446595,fd=9),("nginx",pid=446594,fd=9),("nginx",pid=446593,fd=9))
+tcp   LISTEN 0      4096       127.0.0.1:37877      0.0.0.0:*    users:(("containerd",pid=1017,fd=10))                                                                                                    
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=446574,fd=15))                                                                                             
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=446621,fd=6))                                                                                                     
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=446598,fd=8),("nginx",pid=446596,fd=8),("nginx",pid=446595,fd=8),("nginx",pid=446594,fd=8),("nginx",pid=446593,fd=8))
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=446568,fd=4),("systemd",pid=1,fd=110))                                                                                
+tcp   LISTEN 0      4096               *:9090             *:*    users:(("systemd",pid=1,fd=182))                                                                                                         
+
+===== Docker Containers =====
+NAMES     STATUS    PORTS
+
+===== Postgres Databases =====
+                                                                 List of databases
+      Name       |      Owner      | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |          Access privileges          
+-----------------+-----------------+----------+-----------------+---------+---------+------------+-----------+-------------------------------------
+ codestudio      | codestudio_user | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/codestudio_user                +
+                 |                 |          |                 |         |         |            |           | codestudio_user=CTc/codestudio_user
+ codestudio_user | shahid          | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ csg             | odoo            | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo                           +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo                      +
+                 |                 |          |                 |         |         |            |           | shahid=CTc/odoo
+ postgres        | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ sales_dashboard | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/postgres                       +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres              +
+                 |                 |          |                 |         |         |            |           | dashboard_user=CTc/postgres
+ seaport         | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1        | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo17                         +
+                 |                 |          |                 |         |         |            |           | odoo17=CTc/odoo17                  +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo17
+ template0       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+(9 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:45898         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45732         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51460         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51504         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42304         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46636         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46038         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45756         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42282         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33804         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42468         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46234         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42350         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46592         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46628         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45816         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46430         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46454         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45976         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42364         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51588         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46482         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46472         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42380         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46030         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46100         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46090         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42292         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42354         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52970         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33810         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46288         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46200         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46062         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45702         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46450         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42440         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42402         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51574         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46240         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46108         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51500         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51608         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:53032         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46440         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42346         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51420         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45772         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46550         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46630         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52856         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45966         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42260         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46654         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:80         104.23.243.92:13103     ESTABLISHED 446595/nginx: worke 
+tcp        0      0 127.0.0.1:52870         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42356         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45864         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51658         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33898         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46640         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46258         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51648         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46050         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51496         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46596         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51634         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46498         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46664         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51436         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33892         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46456         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46494         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42498         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51454         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45960         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51620         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46448         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46054         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46014         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45800         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46626         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51394         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33880         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42432         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42308         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33838         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46134         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45968         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45882         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52988         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33826         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42340         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42454         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42480         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51594         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51518         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46666         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52882         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46304         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51380         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45714         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52896         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46504         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46544         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45850         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45784         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45916         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51450         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46530         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46416         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42428         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46264         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46642         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51410         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46574         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45830         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46266         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46124         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51566         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52914         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33864         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52900         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45724         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0    394 72.60.198.47:80         104.23.243.164:10908    ESTABLISHED 446595/nginx: worke 
+tcp        0      0 127.0.0.1:46672         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45950         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:53026         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51404         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42458         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33796         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45774         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45698         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42246         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:53000         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45992         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33836         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46058         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46602         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45924         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51376         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51538         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46218         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52892         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52994         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51360         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51476         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42384         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51524         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42418         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46002         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42400         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46634         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51480         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46046         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46154         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42404         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42236         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51400         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51664         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42272         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45906         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42312         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51610         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45998         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46638         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51628         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42370         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51372         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42324         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42368         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46272         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46210         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52962         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46048         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42226         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45938         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46520         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45700         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45844         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46614         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46172         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46024         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52948         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46012         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51466         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42332         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46408         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51512         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51546         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52838         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42216         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52940         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:58770      54.149.215.94:443       ESTABLISHED 788/monarx-agent    
+tcp        0      0 127.0.0.1:52926         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52980         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46034         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33850         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46248         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45826         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45986         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46566         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46586         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46166         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46150         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:52840         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45876         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:42482         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:53010         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51558         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46074         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:45740         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:46186         127.0.0.1:8069          TIME_WAIT   -                   
+tcp6       0      0 ::1:5432                ::1:47326               ESTABLISHED 446648/postgres: 16 
+tcp6       0      0 ::1:5432                ::1:47310               ESTABLISHED 446644/postgres: 16 
+tcp6       0      0 ::1:5432                ::1:47314               ESTABLISHED 446647/postgres: 16 
+tcp6       0      0 ::1:47310               ::1:5432                ESTABLISHED 446636/python3      
+tcp6       0      0 ::1:47326               ::1:5432                ESTABLISHED 446636/python3      
+tcp6       0      0 ::1:47314               ::1:5432                ESTABLISHED 446636/python3      
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
