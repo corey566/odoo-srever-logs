@@ -1,0 +1,93 @@
+===== Active SSH Sessions =====
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                         
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=766,fd=12))                                                                                         
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=606,fd=16))                                                                                      
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=606,fd=14))                                                                                      
+udp   UNCONN 0      0            0.0.0.0:33060      0.0.0.0:*    users:(("avahi-daemon",pid=766,fd=14))                                                                                         
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=766,fd=13))                                                                                         
+udp   UNCONN 0      0               [::]:46361         [::]:*    users:(("avahi-daemon",pid=766,fd=15))                                                                                         
+tcp   LISTEN 0      4096       127.0.0.1:45955      0.0.0.0:*    users:(("containerd",pid=1000,fd=9))                                                                                           
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=606,fd=15))                                                                                      
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=1080,fd=7))                                                                                             
+tcp   LISTEN 0      128          0.0.0.0:8075       0.0.0.0:*    users:(("python3",pid=76821,fd=4))                                                                                             
+tcp   LISTEN 0      128          0.0.0.0:8069       0.0.0.0:*    users:(("python3",pid=76817,fd=5))                                                                                             
+tcp   LISTEN 0      511          0.0.0.0:5000       0.0.0.0:*    users:(("node",pid=1688,fd=17))                                                                                                
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=606,fd=17))                                                                                      
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=1030,fd=9),("nginx",pid=1028,fd=9),("nginx",pid=1027,fd=9),("nginx",pid=1026,fd=9),("nginx",pid=1025,fd=9))
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=8996,fd=3),("systemd",pid=1,fd=245))                                                                        
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=1030,fd=7),("nginx",pid=1028,fd=7),("nginx",pid=1027,fd=7),("nginx",pid=1026,fd=7),("nginx",pid=1025,fd=7))
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=1080,fd=6))                                                                                             
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=8996,fd=4),("systemd",pid=1,fd=246))                                                                        
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=1030,fd=8),("nginx",pid=1028,fd=8),("nginx",pid=1027,fd=8),("nginx",pid=1026,fd=8),("nginx",pid=1025,fd=8))
+tcp   LISTEN 0      4096               *:9090             *:*    users:(("systemd",pid=1,fd=204))                                                                                               
+
+===== Docker Containers =====
+NAMES     STATUS    PORTS
+
+===== Postgres Databases =====
+                                                                 List of databases
+      Name       |      Owner      | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |          Access privileges          
+-----------------+-----------------+----------+-----------------+---------+---------+------------+-----------+-------------------------------------
+ codestudio      | codestudio_user | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/codestudio_user                +
+                 |                 |          |                 |         |         |            |           | codestudio_user=CTc/codestudio_user
+ codestudio_user | shahid          | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ csg             | odoo            | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo                           +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo                      +
+                 |                 |          |                 |         |         |            |           | shahid=CTc/odoo
+ postgres        | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ sales_dashboard | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/postgres                       +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres              +
+                 |                 |          |                 |         |         |            |           | dashboard_user=CTc/postgres
+ seaport         | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1        | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo17                         +
+                 |                 |          |                 |         |         |            |           | odoo17=CTc/odoo17                  +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo17
+ template0       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+(9 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 72.60.198.47:443        162.159.113.3:11206     ESTABLISHED 1026/nginx: worker  
+tcp        0      0 72.60.198.47:443        104.23.168.20:12798     ESTABLISHED 1027/nginx: worker  
+tcp        0      0 127.0.0.1:37564         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37584         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.170.147:9902     ESTABLISHED 1030/nginx: worker  
+tcp        0      0 72.60.198.47:443        172.70.46.19:11979      TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.166.71:12903     TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37572         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37476         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47174         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37260         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37468         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47198         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37276         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.170.190:11774    TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37234         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.170.147:10796    ESTABLISHED 1030/nginx: worker  
+tcp        0      0 127.0.0.1:59522         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37244         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        104.23.170.147:10596    ESTABLISHED 1030/nginx: worker  
+tcp        0      0 127.0.0.1:47158         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.71.102.12:10021     ESTABLISHED 1026/nginx: worker  
+tcp        0      0 127.0.0.1:37558         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47178         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47184         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47210         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37554         127.0.0.1:8069          TIME_WAIT   -                   
+tcp6       0      0 ::1:53394               ::1:5432                ESTABLISHED 76821/python3       
+tcp6       0      0 ::1:5432                ::1:53400               ESTABLISHED 76856/postgres: 16/ 
+tcp6       0      0 ::1:5432                ::1:53380               ESTABLISHED 76852/postgres: 16/ 
+tcp6       0      0 ::1:5432                ::1:53394               ESTABLISHED 76855/postgres: 16/ 
+tcp6       0      0 ::1:53400               ::1:5432                ESTABLISHED 76821/python3       
+tcp6       0      0 ::1:53380               ::1:5432                ESTABLISHED 76821/python3       
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
