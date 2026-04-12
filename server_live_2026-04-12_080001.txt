@@ -1,0 +1,191 @@
+===== Active SSH Sessions =====
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                   
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=389945,fd=12))                                                                                                
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=715298,fd=16))                                                                                             
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=715298,fd=14))                                                                                             
+udp   UNCONN 0      0            0.0.0.0:60481      0.0.0.0:*    users:(("avahi-daemon",pid=389945,fd=14))                                                                                                
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=389945,fd=13))                                                                                                
+udp   UNCONN 0      0               [::]:57447         [::]:*    users:(("avahi-daemon",pid=389945,fd=15))                                                                                                
+tcp   LISTEN 0      4096       127.0.0.1:45955      0.0.0.0:*    users:(("containerd",pid=1000,fd=9))                                                                                                     
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=715298,fd=15))                                                                                             
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=715335,fd=7))                                                                                                     
+tcp   LISTEN 0      128          0.0.0.0:8075       0.0.0.0:*    users:(("python3",pid=715359,fd=4))                                                                                                      
+tcp   LISTEN 0      128          0.0.0.0:8069       0.0.0.0:*    users:(("python3",pid=722015,fd=4))                                                                                                      
+tcp   LISTEN 0      511          0.0.0.0:5000       0.0.0.0:*    users:(("node",pid=1688,fd=17))                                                                                                          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=715298,fd=17))                                                                                             
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=715318,fd=9),("nginx",pid=715316,fd=9),("nginx",pid=715315,fd=9),("nginx",pid=715314,fd=9),("nginx",pid=715313,fd=9))
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=715302,fd=3),("systemd",pid=1,fd=241))                                                                                
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=715318,fd=7),("nginx",pid=715316,fd=7),("nginx",pid=715315,fd=7),("nginx",pid=715314,fd=7),("nginx",pid=715313,fd=7))
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=715335,fd=6))                                                                                                     
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=715302,fd=4),("systemd",pid=1,fd=242))                                                                                
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=715318,fd=8),("nginx",pid=715316,fd=8),("nginx",pid=715315,fd=8),("nginx",pid=715314,fd=8),("nginx",pid=715313,fd=8))
+tcp   LISTEN 0      4096               *:9090             *:*    users:(("systemd",pid=1,fd=110))                                                                                                         
+
+===== Docker Containers =====
+NAMES     STATUS    PORTS
+
+===== Postgres Databases =====
+                                                                 List of databases
+      Name       |      Owner      | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |          Access privileges          
+-----------------+-----------------+----------+-----------------+---------+---------+------------+-----------+-------------------------------------
+ codestudio      | codestudio_user | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/codestudio_user                +
+                 |                 |          |                 |         |         |            |           | codestudio_user=CTc/codestudio_user
+ codestudio_user | shahid          | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ csg             | odoo            | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo                           +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo                      +
+                 |                 |          |                 |         |         |            |           | shahid=CTc/odoo
+ postgres        | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ sales_dashboard | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/postgres                       +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres              +
+                 |                 |          |                 |         |         |            |           | dashboard_user=CTc/postgres
+ seaport         | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1        | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo17                         +
+                 |                 |          |                 |         |         |            |           | odoo17=CTc/odoo17                  +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo17
+ template0       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+(9 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 72.60.198.47:443        74.222.9.66:60967       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:63374       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:64062     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:52731       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:50291     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:59056     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51636       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:53154     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:54182     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:56412       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:63156     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53778       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:55761     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:65339       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:64979       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:65419     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:55529       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53940       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:57127       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:63679       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:56410     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:55615     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:58718       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:58492       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:55125       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:57351       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53295       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:58774       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:61472       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:51610     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:63422       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49166       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:56901       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:57682       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:56360       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:59645       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:50859       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:54225     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:56644       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:57660       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:54270     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51227       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49791       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:55116     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:64049       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:57541       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49300       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:64998     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:52726       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:62449       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:59155       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:59968       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:55232     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53799       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:60917     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:50271     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:51534     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51118       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:51848     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53801       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:63402       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49241       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:64154     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:60998       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:56747       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51955       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:62337       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:57978       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:58115       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:62838       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:58872     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:49767     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51940       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:49302     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:56554       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53309       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:57396       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:50941       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:59174     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:65279       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51246       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:62493     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:63634       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:60901       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53521       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:63610     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:60089       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:58168     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:53128       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:49992     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:61313       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:59737       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49650       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:63201       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49940       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:55417       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51633       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:62745       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:52315       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:64546       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:63339     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:54865     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:54743     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:53349     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49739       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:59441       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:63260       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:58469       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:60327       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:56683     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:59777     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:61743       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51305       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:49750     SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:60921       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:52725       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:59622       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:56121       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49560       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49683       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:52302       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:49167       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:51890       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        74.222.9.66:55808       SYN_RECV    -                   
+tcp        0      0 72.60.198.47:443        88.99.105.116:51025     SYN_RECV    -                   
+tcp6       0      0 ::1:57802               ::1:5432                ESTABLISHED 715359/python3      
+tcp6       0      0 ::1:57798               ::1:5432                ESTABLISHED 715359/python3      
+tcp6       0      0 ::1:5432                ::1:57782               ESTABLISHED 715387/postgres: 16 
+tcp6       0      0 ::1:57782               ::1:5432                ESTABLISHED 715359/python3      
+tcp6       0      0 ::1:5432                ::1:57802               ESTABLISHED 715391/postgres: 16 
+tcp6       0      0 ::1:5432                ::1:57798               ESTABLISHED 715390/postgres: 16 
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
