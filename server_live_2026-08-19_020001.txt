@@ -1,0 +1,164 @@
+===== Active SSH Sessions =====
+
+===== Active Ports =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                             
+udp   UNCONN 0      0            0.0.0.0:52842      0.0.0.0:*    users:(("avahi-daemon",pid=761,fd=14))                                                                                             
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=761,fd=12))                                                                                             
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=584,fd=16))                                                                                          
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=584,fd=14))                                                                                          
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=761,fd=13))                                                                                             
+udp   UNCONN 0      0               [::]:49536         [::]:*    users:(("avahi-daemon",pid=761,fd=15))                                                                                             
+tcp   LISTEN 0      200        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=1116,fd=7))                                                                                                 
+tcp   LISTEN 0      511          0.0.0.0:5000       0.0.0.0:*    users:(("node",pid=1628,fd=17))                                                                                                    
+tcp   LISTEN 0      128          0.0.0.0:8069       0.0.0.0:*    users:(("python3",pid=1626,fd=4))                                                                                                  
+tcp   LISTEN 0      128          0.0.0.0:8075       0.0.0.0:*    users:(("python3",pid=1625,fd=4))                                                                                                  
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=584,fd=17))                                                                                          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=584,fd=15))                                                                                          
+tcp   LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=19792,fd=9),("nginx",pid=19791,fd=9),("nginx",pid=19790,fd=9),("nginx",pid=19789,fd=9),("nginx",pid=1026,fd=9))
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=19792,fd=7),("nginx",pid=19791,fd=7),("nginx",pid=19790,fd=7),("nginx",pid=19789,fd=7),("nginx",pid=1026,fd=7))
+tcp   LISTEN 0      4096       127.0.0.1:33469      0.0.0.0:*    users:(("containerd",pid=987,fd=15))                                                                                               
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=7338,fd=3),("systemd",pid=1,fd=238))                                                                            
+tcp   LISTEN 0      200            [::1]:5432          [::]:*    users:(("postgres",pid=1116,fd=6))                                                                                                 
+tcp   LISTEN 0      4096               *:9090             *:*    users:(("systemd",pid=1,fd=253))                                                                                                   
+tcp   LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=19792,fd=8),("nginx",pid=19791,fd=8),("nginx",pid=19790,fd=8),("nginx",pid=19789,fd=8),("nginx",pid=1026,fd=8))
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=7338,fd=4),("systemd",pid=1,fd=239))                                                                            
+
+===== Docker Containers =====
+NAMES     STATUS    PORTS
+
+===== Postgres Databases =====
+                                                                 List of databases
+      Name       |      Owner      | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |          Access privileges          
+-----------------+-----------------+----------+-----------------+---------+---------+------------+-----------+-------------------------------------
+ codestudio      | codestudio_user | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/codestudio_user                +
+                 |                 |          |                 |         |         |            |           | codestudio_user=CTc/codestudio_user
+ codestudio_user | shahid          | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ csg             | odoo            | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo                           +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo                      +
+                 |                 |          |                 |         |         |            |           | shahid=CTc/odoo
+ postgres        | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | 
+ sales_dashboard | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =Tc/postgres                       +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres              +
+                 |                 |          |                 |         |         |            |           | dashboard_user=CTc/postgres
+ seaport         | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | 
+ seaport1        | odoo17          | UTF8     | libc            | C       | C.UTF-8 |            |           | =Tc/odoo17                         +
+                 |                 |          |                 |         |         |            |           | odoo17=CTc/odoo17                  +
+                 |                 |          |                 |         |         |            |           | odoo=CTc/odoo17
+ template0       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1       | postgres        | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres                        +
+                 |                 |          |                 |         |         |            |           | postgres=CTc/postgres
+(9 rows)
+
+
+===== Network Connections =====
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:40584         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40510         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40550         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.71.198.92:9369      ESTABLISHED 19789/nginx: worker 
+tcp        0      0 127.0.0.1:48304         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37554         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38106         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37532         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47678         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40590         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56182         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56170         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56256         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38624         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37576         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40588         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37496         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40532         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37634         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40540         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47692         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40512         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38616         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48390         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.69.179.25:11926     TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48318         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56154         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38140         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47622         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37604         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38152         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38122         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40574         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40494         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56226         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38612         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38096         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47708         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47710         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.69.95.209:12467     ESTABLISHED 19789/nginx: worker 
+tcp        0      0 127.0.0.1:38158         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37538         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37618         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47654         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40536         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40530         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38090         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38138         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.71.202.140:10675    TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56218         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47658         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.70.218.86:13132     ESTABLISHED 19789/nginx: worker 
+tcp        0      0 127.0.0.1:47714         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38112         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40502         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40496         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38094         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47624         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.70.219.201:14110    ESTABLISHED 19789/nginx: worker 
+tcp        0      0 127.0.0.1:56204         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48370         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37588         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40498         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37560         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48322         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37508         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40564         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38144         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48362         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48352         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37524         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48310         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47702         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56164         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:40516         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37630         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56194         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38136         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:56240         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.71.202.156:13023    ESTABLISHED 19789/nginx: worker 
+tcp        0      0 72.60.198.47:443        172.71.198.74:12912     TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47690         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48312         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48386         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47606         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.69.178.10:13831     TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48342         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38082         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38088         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37522         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47620         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38170         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48400         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47668         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:47640         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:48332         127.0.0.1:8069          TIME_WAIT   -                   
+tcp        0      0 72.60.198.47:443        172.71.198.92:14037     ESTABLISHED 19789/nginx: worker 
+tcp        0      0 127.0.0.1:56206         127.0.0.1:8069          TIME_WAIT   -                   
+tcp6       0      0 ::1:44846               ::1:5432                ESTABLISHED 1625/python3        
+tcp6       0      0 ::1:5432                ::1:44846               ESTABLISHED 1655/postgres: 16/m 
+tcp6       0      0 ::1:5432                ::1:44866               ESTABLISHED 1662/postgres: 16/m 
+tcp6       0      0 ::1:44866               ::1:5432                ESTABLISHED 1625/python3        
+tcp6       0      0 ::1:44852               ::1:5432                ESTABLISHED 1625/python3        
+tcp6       0      0 ::1:5432                ::1:44852               ESTABLISHED 1661/postgres: 16/m 
+
+===== Auditd System Changes =====
+
+===== AIDE File Integrity =====
